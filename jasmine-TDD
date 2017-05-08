@@ -1,44 +1,43 @@
-describe("library", function() {
-    var lib;
+describe("compute", function() {
+    var comput;
 
     beforeEach(function() {
-        lib = new library();
+        comput = new compute();
     });
-
-
+ 
 describe("Arithmetic Functionality", function() {
       it("should return 7 as average for 7, 7, 7", function() {
-          expect(lib.computeAverage(7,7,7)).toEqual(7);
+          expect(comput.computeAverage(7,7,7)).toEqual(7);
         });
 
       it("should return 5 as average for 1, 6, 8", function() {
-          expect(lib.computeAverage(1,6,8)).toEqual(5);
+          expect(comput.computeAverage(1,6,8)).toEqual(5);
           });
       it("should return 6 as average for 1, 5, 12", function() {
-          expect(lib.computeAverage(1, 5, 12)).toEqual(6);
+          expect(comput.computeAverage(1, 5, 12)).toEqual(6);
           });
       it("should return 362880 as average for 9", function() {
-          expect(lib.computeFactorial(9)).toEqual(362880);
+          expect(comput.computeFactorial(9)).toEqual(362880);
           });
       it("should return 720 as average for 6", function() {
-          expect(lib.computeFactorial(6)).toEqual(720);
+          expect(comput.computeFactorial(6)).toEqual(720);
           });
 });
 
 describe("Temperature Conversion Functionality", function() {
   //Spec for sum operation
       it("should return 77 when given a value of 25", function() {
-          expect(lib.convertTempCtoF(25)).toEqual(77);
+          expect(comput.convertTempCtoF(25)).toEqual(77);
         });
       it("should return 122 when given a value of 50", function() {
-          expect(lib.convertTempCtoF(50)).toEqual(122);
+          expect(comput.convertTempCtoF(50)).toEqual(122);
         });
       it("should return 100 when given a value of 212", function() {
-          expect(lib.convertTempFtoC(212)).toEqual(100);
+          expect(comput.convertTempFtoC(212)).toEqual(100);
         });
       it("should return 50 given a value of 122", function() {
-          expect(lib.convertTempFtoC(122)).toEqual(50);
+          expect(comput.convertTempFtoC(122)).toEqual(50);
         });
       it("should return 40 when given a value of 104", function() {
-          expect(lib.convertTempFtoC(104)).toEqual(40);
+          expect(comput.convertTempFtoC(104)).toEqual(40);
           });
